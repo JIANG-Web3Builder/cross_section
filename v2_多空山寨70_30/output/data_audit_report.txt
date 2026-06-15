@@ -1,0 +1,36 @@
+
+============================================================
+DATA QUALITY AUDIT REPORT
+============================================================
+============================================================
+--- 1. Physical Integrity Check (物理完整性检查) ---
+Data Shapes: {'open': (16824, 574), 'high': (16824, 574), 'low': (16824, 574), 'close': (16824, 574), 'volume': (16824, 574), 'quote_volume': (16824, 574), 'returns': (16824, 574)}
+✅ Shapes are aligned.
+Overall Missing Data (NaN): 37.02%
+✅ Timestamp continuity is perfect.
+✅ No duplicate timestamps.
+
+============================================================
+--- 2. Financial Logic Check (金融逻辑检查) ---
+✅ High >= Low: OK
+✅ High >= Open, Close: OK
+✅ Low <= Open, Close: OK
+✅ All prices > 0: OK
+✅ All volumes >= 0: OK
+
+============================================================
+--- 3. Statistical Outliers Check (异常值检查) ---
+🚀 Pumps (>100% in 1h): 7 occurrences
+💥 Dumps (<-50% in 1h): 2 occurrences
+   Pumps >50%: 75, Dumps <-30%: 144
+Extreme Max Return: 198.63%
+Extreme Min Return: -89.00%
+
+============================================================
+--- 4. Dead Coins Check (死币检测) ---
+⚠️ Found 73 potential dead/illiquid coins:
+   ['AGIXUSDT', 'ALPHAUSDT', 'AMBUSDT', 'ANTUSDT', 'AUDIOUSDT', 'BADGERUSDT', 'BAKEUSDT', 'BALUSDT', 'BLUEBIRDUSDT', 'BNXUSDT']...
+
+============================================================
+AUDIT COMPLETE
+============================================================

@@ -1,0 +1,5 @@
+embeddings {
+tensor_name: "symbol:03608"
+tensor_path: "03608/symbol/tensors.tsv"
+metadata_path: "03608/symbol/metadata.tsv"
+}

@@ -1,0 +1,44 @@
+# Local environments and caches
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data directories
+data/
+**/data/
+
+# Market data and intermediate datasets
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.db
+*.sqlite
+*.sqlite3
+
+# Model checkpoints and training logs
+*.ckpt
+*.pt
+*.pth
+events.out.tfevents.*
+
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem

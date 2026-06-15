@@ -1,0 +1,6 @@
+Missing data: 37.0%
+Pumps >100%/h: 0, Dumps <-50%/h: 0
+Return range: [-50.0%, 49.3%]
+Dead/illiquid coins: 404
+  Examples: ['1000BONKUSDT', 'AGIXUSDT', 'ALGOUSDT', 'ALPHAUSDT', 'AMBUSDT', 'ANTUSDT', 'APEUSDT', 'ARPAUSDT', 'AUDIOUSDT', 'BADGERUSDT']
+Low coverage (<85%): 326 coins
